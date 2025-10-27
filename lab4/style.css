@@ -4,16 +4,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box; 
     overflow: hidden;
-    
 }
 body{
     display: flex;
     justify-self: center;
     position:relative;
     width: 700px;
-    height: 100vh;
+    margin-top: 5px;
+    height: 99vh;
     border:#71989a solid;
-
+   
 }
  .header{
     color: #000;
