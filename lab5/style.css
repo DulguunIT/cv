@@ -155,7 +155,7 @@ span{
     grid-template-columns: 7fr 5fr;
     height: 10px;
     width: 100%;
-    background: red;
+    background: var(--pink);
 }
 .red{
     background:var(--pink);
