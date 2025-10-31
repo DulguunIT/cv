@@ -5,14 +5,16 @@
     box-sizing: border-box; 
     overflow: hidden;
 }
-body{
+
+.container{
     display: flex;
     justify-self: center;
     position:relative;
-    width: 700px;
-    margin-top: 5px;
+    width: 650px;
+    margin: auto;
     height: 99vh;
     border:#71989a solid;
+    
    
 }
  .header{
@@ -43,10 +45,13 @@ body{
 img{
     margin-top: 50px;
     width: 100%;
-    height: 200px;
-    border: solid rgb(255, 255, 255);
+    height: 200px ;
+    border: solid rgb(255, 255, 255) ;
     border-width: 5px;
     border-radius: 50%;
+    background-image: url("photo.jpg");
+ 
+
 }
 .info{
     margin: 30px 15px;
