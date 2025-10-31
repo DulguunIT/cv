@@ -32,11 +32,9 @@ padding-left: 5px;
     color: white;
 }
 #showcase{
-    
-    height: 50px;
     background: rgb(19,17,80);
     color: white;
-    height: calc(25vh + var(--height-header));
+    height:calc(180px + var(--height-header));
     display:flex;
     flex-direction: column;
     justify-content: center;
