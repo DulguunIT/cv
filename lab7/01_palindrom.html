@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom</title>
+    <script>
+        /**
+         *  1. Гараас өгсөн тооны цифрүүдийн нийлбэр нь палимдром мөн эсэхийг шалга
+         */
+        var a;
+        var b = 0;
+        var num;
+        num = parseInt(prompt("Enter your number: "));
+        //prompt iin return type ni string uchraas casting hiih heregtei
+        var a = 0;
+        while (num > 0) {
+
+            a += Math.floor(num % 10);
+            num = Math.floor(num / 10);
+        }
+        document.writeln("NIILBER NI " + a);
+        document.writeln("");
+
+        var original = a;
+        while (a > 0) {
+            b = b * 10 + a % 10;
+            //console.log(a % 10) ni buruu uchir ni 
+            // ene ni string deer ajilladag
+            // bid hediin casting hiichihsen
+            a = Math.floor(a / 10);
+        }
+        if (original == b)
+            document.writeln("Ene" + " too palindrom mun");
+        else
+            document.writeln("Ene" + " too palindrom bish");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

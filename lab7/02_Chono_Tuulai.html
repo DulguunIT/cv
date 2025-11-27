@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf And Rabbit</title>
+    <script>
+        /**
+         *   2. Чоно 25 км/ц хурдтай, туулай 18 км/ц хурдтай. Гараас өгсөн зайтай байхад хэдэн минут хэдэн секундын дараа гэхэд гүйцэх вэ
+         */
+        var zai = parseInt(prompt("Enter Zai #meter : "));
+        var wolfV = 25; // km per hour
+        var rabbitV = 18;
+        var diffV = wolfV - rabbitV; //km
+        var diffV_MIN = diffV * 1000 / 3600;//meter per sec
+        var time_SEC = zai / diffV_MIN;
+        document.writeln("Чоно туулайг" + "  " + Math.floor(time_SEC / 60) + "min" + "   " + Math.floor(time_SEC % 60) + "sec" + "   хугаацаанд гүйцэж түрүүлнэ.");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

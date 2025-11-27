@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Number</title>
+    <script>
+        /**
+         * 3. Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ
+         * 
+         */
+        var floor = 9;
+        var entrance = 3;
+        var door = 4;
+        var doorNumber;
+        var a = 1;
+        while (a === 1) {
+            doorNumber = parseInt(prompt("Door number: "));
+            if (doorNumber <= 0 || doorNumber > entrance * door * floor) {
+                alert("Hey! This door number does not even exist on earth!\n mind entering again :)");
+                continue;
+            }
+            var entrancef = Math.ceil(doorNumber / (floor * door));
+
+            var floorf = Math.ceil((doorNumber - (entrancef - 1) * floor * door) / door);
+
+            var doorf = doorNumber - (entrancef - 1) * floor * door - (floorf - 1) * door;
+
+            alert(
+                "Entrance: " + entrancef +
+                "\nFloor: " + floorf +
+                "\nDoor: " + doorf
+            );
+            a = parseInt(prompt("Ta dahiad haih uu (1 || 0): #"));
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
