@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+         * 4. Array-д өгөгдсөн 5 тооны хамгийн бага ерөнхий хуваагдагчийг ол
+         * 
+         * let is block-scoped only inside {}
+         * 
+         * 
+         * let y = 1
+         * var is funciont-scoped :: тухайн функцээсээ гарвал устдаг. локал
+         * 
+         * 
+         */
+
+        let numbers = [];
+        let output;
+        for (let i = 0; i < 5; i++) {
+            let input = parseInt(prompt("Enter number " + (i + 1) + ":"));
+            numbers.push(input);
+        }
+
+
+        function euclid(num1, num2) {
+            while (num2 != 0) {
+                let temp = num2;
+                num2 = num1 % num2;
+                num1 = temp;
+            }
+            return num1;
+        }
+        function div(a, b) {
+            return (a * b) / euclid(a, b);
+        }
+        function divArray(nums) {
+            let result = nums[0];
+            for (let i = 1; i < nums.length; i++) {
+                result = div(result, nums[i]);
+            }
+            return result;
+        }
+        output = divArray(numbers);
+        document.writeln(output);
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

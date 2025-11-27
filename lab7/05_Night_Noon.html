@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Өглөө өдөр</title>
+    <script>
+        /*Вэб сайтруу өглөө ороход гараас өгсөн тооны 2 зэрэгийг, орой ороход гараас өгсөн тооны язгуурыг ол*/
+        let a;
+        let now = new Date();
+        let hours = now.getHours();      // 0–23
+        document.writeln("Цаг " + hours + " болж байна.");
+        a = parseInt(prompt("Enter Number: "));
+        if (hours >= 0 && hours < 12) {
+            document.write(a * a);
+        }
+        else document.write(Math.sqrt(a));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
