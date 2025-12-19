@@ -12,6 +12,10 @@ body {
     font-size: 14px;
 }
 
+.nav-link i {
+    color: var(--header-btn);
+    font-size: 1.3em;
+}
 
 /* Main Starting*/
 
