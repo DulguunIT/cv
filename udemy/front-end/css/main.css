@@ -12,6 +12,7 @@ body {
     font-size: 14px;
 }
 
+
 /* Main Starting*/
 
 .poster {
@@ -99,7 +100,7 @@ body {
     outline: inherit;
 }
 
-.main-title-container > button:focus {
+.main-title-container>button:focus {
     font-weight: bold;
     border-bottom: 2px solid black;
 }
@@ -150,11 +151,11 @@ a:hover {
     margin-bottom: 0.5em;
 }
 
-.card-rating-container > span:nth-child(1) {
+.card-rating-container>span:nth-child(1) {
     color: var(--star-text);
 }
 
-.card-rating-container > span:nth-child(2) {
+.card-rating-container>span:nth-child(2) {
     color: var(--sub-tex);
 }
 
@@ -165,11 +166,11 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.card-price > span {
+.card-price>span {
     font-weight: 700;
 }
 
-.card-price > small {
+.card-price>small {
     text-decoration: line-through;
     color: var(--sub-text);
 }
@@ -236,7 +237,7 @@ hr {
     margin-bottom: 0.7em;
 }
 
-button > i {
+button>i {
     margin-right: 1em;
 }
 
@@ -288,7 +289,7 @@ button > i {
     align-items: flex-start;
 }
 
-.signup-pattern > hr {
+.signup-pattern>hr {
     width: 35px;
     height: 5px;
     border-radius: 20px;
@@ -354,6 +355,10 @@ nav {
 .nav-btn-container {
     display: flex;
     justify-content: space-evenly;
+}
+
+.nav-btn-container i {
+    font-size: 2rem;
 }
 
 .nav-btn {
